@@ -2,24 +2,27 @@ package javaOppsConcepts;
 
 
 
-public class A {
+class E {
 
 	public void bangalore() {
 		System.out.println("This is bangalore");
 	}
-	
-	public class B extends A {
+}
+	class F extends E {
 		public void hyderabad() {
 			System.out.println("This is hyderabad");
 		}
 	}
 	
-	public class Test{
+	public class SingleInHeritance{
 		public static void main(String[] args) {
-			
-			//B b=new B();
+			E a=new E();
+			F b=new F();
+			a.bangalore();
+			b.bangalore();
+			b.hyderabad();
 		}
 	
 }
 
-}
+
